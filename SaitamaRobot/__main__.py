@@ -195,20 +195,20 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(text="❓ Bütün Əmrlər", 
-        url=f"t.me/NezrinRobot?start=help"),
+        url=f"t.me/FidanRobot?start=help"),
                    ],
                      [
                          InlineKeyboardButton(
                              text="👨‍💻 Sahibim",
-                             url=f"https://t.me/aykhan_s"),
+                             url=f"https://t.me/HuseynH"),
                          InlineKeyboardButton(
-                             text="🔔 Yeniliklər kanalı",
-                             url="https://t.me/RoBotlarimTg")
+                             text="🔔kanal",
+                             url="https://t.me/Fidowunkanali")
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🙋🏻‍♂️ Dəstək Qrupumuz",
-                             url=f"https://t.me/RoBotlarimGroup")
+                             text="🙋🏻‍♂️ Qrupumuz",
+                             url=f"https://t.me/FidaninDunyasi")
                      ],
                      [
                          InlineKeyboardButton(
@@ -218,7 +218,7 @@ def start(update: Update, context: CallbackContext):
                     ]]))
     else:
         update.effective_message.reply_text(
-            "🧚‍♀Bəli, Mən Nəzrin♥️ İşləyirəm"
+            "🧚‍♀Bəli, Mən FidanRobot İşləyirəm"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
@@ -268,7 +268,7 @@ def help_button(update, context):
     try:
         if mod_match:
             module = mod_match.group(1)
-            text = ("*{}* modulu haqqında məlumat:\n 👨🏻‍💻 *RoBotlarımTg* ".format(
+            text = ("*{}* modulu haqqında məlumat:\n 👨🏻‍💻 *FidanRobot* ".format(
                 HELPABLE[module].__mod_name__) + HELPABLE[module].__help__)
             query.message.edit_text(
                 text=text,
