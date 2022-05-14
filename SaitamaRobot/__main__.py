@@ -51,13 +51,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-🙋🏻‍♀️Salam {} necəsən? mənim adım {}! 
+🙋🏻‍♂️Salam {} necəsən? mənim adım {}! 
 👮🏻‍♀️Mən Telegram qruplarını qorumaq üçün Azərbaycanca Olan Qrup İdarə Botuyam!.
 👩‍🔧 Bacarıqlarımı görməy üçün buttona klik et
 """
 
 HELP_STRINGS = """
-🙋🏻‍♀️Xoş gəldiniz! Mənim adım *{}*.
+🙋🏻‍♂️Xoş gəldiniz! Mənim adım *{}*.
 👮🏻‍♀️Görünür köməyə ehdiyacınız var Məni qrupa əlavə edib admin edin.
 🛡️Aşağıda gördüyünüz modullarımla sizin qrupunuzu tam güvəndə saxlayacam!
 
@@ -75,7 +75,7 @@ Və aşağıdakılar:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nBütün əmrlər / və ya ! ilə işlədilir.\n")
 
-SAITAMA_IMG = "https://telegra.ph//file/56ee0253fed1cb1061b5f.jpg"
+SAITAMA_IMG = "https://te.legra.ph/file/62aaaa15c65511531cab0.jpg"
 
 DONATE_STRING = """Bizi seçdiyiniz üçün təşəkkür edirik  🌚"""
 
@@ -200,15 +200,15 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="👨‍💻 Sahibim",
-                             url=f"https://t.me/HuseynH"),
+                             url=f"https://t.me/Vusaliww"),
                          InlineKeyboardButton(
                              text="🔔kanal",
-                             url="https://t.me/Fidowunkanali")
+                             url="https://t.me/ZagidMMC")
                     ],
                      [
                          InlineKeyboardButton(
                              text="🙋🏻‍♂️ Qrupumuz",
-                             url=f"https://t.me/FidaninDunyasi")
+                             url=f"https://t.me/LuxuryBaku")
                      ],
                      [
                          InlineKeyboardButton(
@@ -268,7 +268,7 @@ def help_button(update, context):
     try:
         if mod_match:
             module = mod_match.group(1)
-            text = ("*{}* modulu haqqında məlumat:\n 👨🏻‍💻 *FidanRobot* ".format(
+            text = ("*{}* modulu haqqında məlumat:\n 👨🏻‍💻 *VusalRobot* ".format(
                 HELPABLE[module].__mod_name__) + HELPABLE[module].__help__)
             query.message.edit_text(
                 text=text,
