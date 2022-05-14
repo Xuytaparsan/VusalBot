@@ -218,7 +218,7 @@ def start(update: Update, context: CallbackContext):
                     ]]))
     else:
         update.effective_message.reply_text(
-            "🧚‍♀Bəli, Mən FidanRobot İşləyirəm"
+            "👨Bəli, Mən VusalRobi İşləyirəm"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
